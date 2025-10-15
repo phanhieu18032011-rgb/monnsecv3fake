@@ -17,9 +17,9 @@ def run_flask():
 Thread(target=run_flask, daemon=True).start()
 
 # Bot setup
-TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
+TOKEN = os.environ.get('TOKEN')
 if not TOKEN:
-    print("❌ Missing DISCORD_BOT_TOKEN")
+    print("❌ Missing TOKEN")
     exit(1)
 
 intents = discord.Intents.default()
